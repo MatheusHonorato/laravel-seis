@@ -11,6 +11,16 @@
 |
 */
 
+use \App\{Post, PostImage};
+
 Route::get('/', function () {
-    return view('welcome');
+    //$users = \App\User::all();
+    return view('welcome', ['test' => 'Nanderson']);
+});
+
+Route::get('sub', function() {
+    $posts = Post::addSelect([
+        'thumb' => PostImage::select('image')->whereColumn('post_id', 'posts.id')->limit(1)
+    ])->get();
+    return \App\Post::all();
 });
