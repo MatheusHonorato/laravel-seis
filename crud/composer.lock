@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "3bb4dacacf43532a01bf1d3d6dd3bbe1",
+    "content-hash": "d0c0536744153afe31b3b12700071edc",
     "packages": [
         {
             "name": "dnoegel/php-xdg-base-dir",
@@ -3238,6 +3238,57 @@
                 "page"
             ],
             "time": "2020-01-06T09:32:42+00:00"
+        },
+        {
+            "name": "facade/ignition-code-editor",
+            "version": "1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/facade/ignition-code-editor.git",
+                "reference": "8bb704424bfe20c3c1f6552ba4ffde5883be8d51"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/facade/ignition-code-editor/zipball/8bb704424bfe20c3c1f6552ba4ffde5883be8d51",
+                "reference": "8bb704424bfe20c3c1f6552ba4ffde5883be8d51",
+                "shasum": ""
+            },
+            "require": {
+                "facade/ignition": "~1.0",
+                "illuminate/support": " 5.8.*|^6.0",
+                "php": "^7.1"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^8.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0-dev"
+                },
+                "laravel": {
+                    "providers": [
+                        "Facade\\CodeEditor\\CodeEditorServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Facade\\CodeEditor\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "A code editor for Ignition",
+            "homepage": "https://github.com/facade/code-editor",
+            "keywords": [
+                "editor",
+                "ignition",
+                "laravel"
+            ],
+            "time": "2019-08-31T00:55:59+00:00"
         },
         {
             "name": "facade/ignition-contracts",
